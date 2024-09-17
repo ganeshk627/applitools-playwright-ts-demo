@@ -23,7 +23,7 @@ Welcome to the course "Introduction to Playwright" by [Renata Andrade](https://t
 1. Fork the project following the [GitHub instructions](https://docs.github.com/en/get-started/quickstart/fork-a-repo) - (use the parameter --clone=true);
 1. Access the forked project `cd tau-introduction-to-playwright`
 
-## Instal the project
+## Install the project
 
 On your terminal, type:
 
@@ -31,6 +31,18 @@ On your terminal, type:
 
 IMPORTANT: to run the tests from `main`, you'll need to setup your [.env](.env) following the [.env.example](.env.example), otherwise many tests will fail - this setup is explained in the Chapter 4 video. The recommendation is to access each branch (`git checkout [branchname]`) and run the tests from the branch.
 
+2. Set the environment variables in your terminal: `export [variable]=value`
+```bash
+export APPLITOOLS_API_KEY=<YOUR_API_KEY?
+```
+3. Run the tests:
+```bash
+npm run test:visual:acme
+```
+4. To view reports
+```bash
+npm run show-report
+```
 ___
 
 💡 Share on LinkedIn something interesting you've learned! Don't forget to tag me [Renata Andrade](https://www.linkedin.com/in/raptatinha/).
